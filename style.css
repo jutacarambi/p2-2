@@ -4,15 +4,16 @@
     --cor-de-fundo: #EBECEE;
     --cor-cabecalho: rgb(146, 104, 82);
     --cor-fonte: #2b0036;
+    --degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 }
 body{ /*estilizacao do corpo da pagina*/
     background-color: var(--cor-de-fundo);
     color: var(--cor-fonte);
 }
 
-@media screen and (min-width:768px){ /*independente do dispositivo que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente responsivo, sem quebras de layout*/
-    .botoes{ /*classe botoes no HTML*/
-        display: flex;
+/*@media screen and (min-width:768px){ /*independente do dispositivo que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente responsivo, sem quebras de layout*/
+    /*.botoes{ /*classe botoes no HTML*/
+       /* display: flex;
     }
 }
 
@@ -46,6 +47,7 @@ body{ /*estilizacao do corpo da pagina*/
     display: none; /*a propriedade DISPLAY:NONE faz com que a lista seja ocultada*/
     position: absolute;
     top: 100%;
+    width: 60vw;
 }
 /*Para exibir a lista, utilizamos a pseudoclasse no CSS chamada :checked*/
 /*Essa pseudoclasse verifica se o botão está selecionado ou não*/
@@ -53,5 +55,19 @@ body{ /*estilizacao do corpo da pagina*/
 .container-botao:checked ~ .lista-menu{
     display: block; /*a propriedade DISPLAY:BLOCK faz com que a lista apareça*/
 }
-
+.lista-menu-titulo,
+.lista-menu-item{
+    padding: 1em;
+    background-color: var(--cor-de-fundo);
+}
+,lista-menu-titulo{
+    color: var(--cor-fonte);
+}
+lista-menu-link{
+    background: var(--degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
 /*  FIM DO CABECALHO */
