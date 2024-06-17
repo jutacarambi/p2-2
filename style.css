@@ -63,7 +63,7 @@ body{ /*estilizacao do corpo da pagina*/
 .lista-menu-titulo{
     color: var(--cor-fonte);
 }
-lista-menu-link{
+.lista-menu-link{
     background: var(--degrade);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
