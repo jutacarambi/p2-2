@@ -4,7 +4,7 @@
     --cor-de-fundo: #EBECEE;
     --cor-cabecalho: rgb(146, 104, 82);
     --cor-fonte: #2b0036;
-    --degrade:linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
 }
 body{ /*estilizacao do corpo da pagina*/
     background-color: var(--cor-de-fundo);
@@ -15,7 +15,7 @@ body{ /*estilizacao do corpo da pagina*/
     /*.botoes{ /*classe botoes no HTML*/
        /* display: flex;
     }
-}
+}*/
 
 /* INICIO DO CABECALHO */
 
@@ -60,7 +60,7 @@ body{ /*estilizacao do corpo da pagina*/
     padding: 1em;
     background-color: var(--cor-de-fundo);
 }
-,lista-menu-titulo{
+.lista-menu-titulo{
     color: var(--cor-fonte);
 }
 lista-menu-link{
